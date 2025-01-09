@@ -7,3 +7,122 @@ body {
     padding: 0;
     margin: 0;
 }
+
+h1, h2, p {
+    margin: 0;
+    font-size: inherit;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2994cf;
+    --accent-color: #f9c843;
+    --bg-color: #e1e8ef;
+}
+
+body {
+    font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template:
+    "sidebar header" auto
+    "sidebar content" 1fr
+    / 256px 1fr;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    grid-area: sidebar;
+    padding: 16px;
+}
+
+#title {
+    font-size: 1.2em;
+    gap: 8px;
+    margin-bottom: 48px;
+}
+
+#title:hover {
+    text-decoration: none;
+}
+
+#logo {
+    width: 1.5em;
+}
+
+.sidebar ul {
+    margin-bottom: 64px;
+}
+
+.sidebar li {
+    margin-bottom: 16px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sidebar svg {
+    fill: white;
+    width: 1em;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    grid-area: header;
+}
+
+.welcome-area button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 500px;
+}
+
+.content {
+    grid-area: content;
+    background-color: var(--bg-color);
+    padding: 16px;
+
+    display: grid;
+    grid-template:
+        "projects announcements" 1fr
+        "projects trending" 1fr
+        / 1fr 200px;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.projects-section {
+    grid-area: projects;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.project-card {
+    padding: 8px;
+    border-left: 8px solid var(--accent-color);
+}
