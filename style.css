@@ -194,7 +194,7 @@ a:hover {
 
 .buttons {
     justify-items: center;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .header button {
@@ -307,7 +307,7 @@ a:hover {
 }
 
 .announcements-container {
-    padding: 24px;
+    padding: 32px 24px;
 
     display: grid;
     grid-auto-rows: min-content;
