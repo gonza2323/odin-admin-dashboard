@@ -151,7 +151,7 @@ a:hover {
     justify-self: stretch;
     padding: 4px 16px;
     border: none;
-    background-color: #e1e8ef;
+    background-color: var(--bg-color);
     border-radius: 500px;
     font-family: inherit;
 }
@@ -167,11 +167,14 @@ a:hover {
     height: 2.6rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: #f9c843;
-    background-image: url("./img/cat.png");
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
+}
+
+.user-pic {
+    background-image: url("./img/cat.png");
+    background-color: var(--accent-color);
 }
 
 .welcome-msg {
@@ -369,4 +372,21 @@ a:hover {
     color: #636363;
     height: min-content;
     align-self: start;
+}
+
+.user2-pic {
+    background-image: url("./img/dog.png");
+    background-color: #e0f2fd;
+}
+
+.user3-pic {
+    background-image: url("./img/spiderman.png");
+    background-color: #a2a2a2;
+    background-size: 50%;
+}
+
+.user4-pic {
+    background-image: url("./img/penguin.png");
+    background-color: #fb9faf;
+    background-size: 50%;
 }
